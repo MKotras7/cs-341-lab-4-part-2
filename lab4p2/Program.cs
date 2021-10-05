@@ -16,7 +16,31 @@ namespace lab4p2
         /// <returns>Returns true if and only if the array is a square size, and contains only diagonal elements.</returns>
         public static bool IsDiagonal(int[,] arr)
         {
-            throw new NotImplementedException();
+            if(arr.GetLength(0) != arr.GetLength(1))
+            {
+                return false;
+            }
+            else
+            {
+                for(int i = 0; i < arr.GetLength(0); i++)
+                {
+                    for(int j = 0; j < arr.GetLength(1); j++)
+                    {
+                        if(i == j)
+                        {
+                            continue;
+                        }
+                        else
+                        {
+                            if(arr[i,j] != 0)
+                            {
+                                return false;
+                            }
+                        }
+                    }
+                }
+                return true;
+            }
         }
     }
 }
