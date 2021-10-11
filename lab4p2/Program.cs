@@ -10,7 +10,7 @@ namespace lab4p2
         }
 
         /// <summary>
-        /// 
+        /// Returns true if the array is a square size, and contains only diagonal elements, this means that all non-diagonal values are 0.
         /// </summary>
         /// <param name="arr">a 2d integer array</param>
         /// <returns>Returns true if and only if the array is a square size, and contains only diagonal elements.</returns>
