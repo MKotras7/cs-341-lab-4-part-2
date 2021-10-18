@@ -6,7 +6,13 @@ namespace lab4p2
     {
         static void Main(string[] args)
         {
-            
+            int[,] a = {
+                { 0, 1 },
+                { 1, 2 },
+                { 2, 3 },
+                { 3, 4 }
+            };
+            PrintRowSums(a);
         }
 
         /// <summary>
@@ -40,6 +46,43 @@ namespace lab4p2
                     }
                 }
                 return true;
+            }
+        }
+
+        /// <summary>
+        /// Returns an array of the sum of each row in an array.
+        /// </summary>
+        /// <param name="arr">the 1d array</param>
+        public static int[] RowSum(int[,] arr)
+        {
+            int[] sums = new int[arr.GetLength(0)];
+            for(int row = 0; row < arr.GetLength(0); row++)
+            {
+                int sum = 0;
+                for(int col = 0; col < arr.GetLength(1); col++)
+                {
+                    sum += arr[row, col];
+                }
+                sums[row] = sum;
+            }
+            return sums;
+        }
+
+        /// <summary>
+        /// Prints out the sums of each row of the array
+        /// </summary>
+        /// <param name="arr">a 2d integer array</param>
+        public static void PrintRowSums(int[,] arr)
+        {
+            if (arr.Length > 0)
+            {
+                int numChars = (int)Math.Floor(Math.Log10(arr.Length)) + 1;
+                int[] rowSums = RowSum(arr);
+                string template = String.Format("{{0,{0}}} : {{1}}", numChars);
+                for (int i = 0; i < rowSums.Length; i++)
+                {
+                    Console.WriteLine(string.Format(template, i, rowSums[i]));
+                }
             }
         }
     }

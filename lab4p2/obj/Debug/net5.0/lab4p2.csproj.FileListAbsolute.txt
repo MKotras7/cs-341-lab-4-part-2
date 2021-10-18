@@ -1,0 +1,16 @@
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\obj\Debug\net5.0\lab4p2.csproj.AssemblyReference.cache
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\obj\Debug\net5.0\lab4p2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\obj\Debug\net5.0\lab4p2.AssemblyInfoInputs.cache
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\obj\Debug\net5.0\lab4p2.AssemblyInfo.cs
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\obj\Debug\net5.0\lab4p2.csproj.CoreCompileInputs.cache
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\bin\Debug\net5.0\lab4p2.exe
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\bin\Debug\net5.0\lab4p2.deps.json
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\bin\Debug\net5.0\lab4p2.runtimeconfig.json
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\bin\Debug\net5.0\lab4p2.runtimeconfig.dev.json
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\bin\Debug\net5.0\lab4p2.dll
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\bin\Debug\net5.0\ref\lab4p2.dll
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\bin\Debug\net5.0\lab4p2.pdb
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\obj\Debug\net5.0\lab4p2.dll
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\obj\Debug\net5.0\ref\lab4p2.dll
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\obj\Debug\net5.0\lab4p2.pdb
+C:\Users\Matthew\Desktop\fall2021Classes\cs-341-lab-4-part-2\lab4p2\obj\Debug\net5.0\lab4p2.genruntimeconfig.cache
