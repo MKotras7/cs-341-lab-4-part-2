@@ -42,5 +42,24 @@ namespace lab4p2
                 return true;
             }
         }
+
+        /// <summary>
+        /// Returns an array of the sum of each row in an array.
+        /// </summary>
+        /// <param name="arr">the 1d array</param>
+        public static int[] RowSum(int[,] arr)
+        {
+            int[] sums = new int[arr.Length];
+            for(int row = 0; row < arr.Length; row++)
+            {
+                int sum = 0;
+                for(int col = 0; col < arr.GetLength(row); col++)
+                {
+                    sum += arr[row, col];
+                }
+                sums[row] = sum;
+            }
+            return sums;
+        }
     }
 }
