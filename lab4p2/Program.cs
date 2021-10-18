@@ -6,7 +6,13 @@ namespace lab4p2
     {
         static void Main(string[] args)
         {
-            
+            int[,] a = {
+                { 0, 1 },
+                { 1, 2 },
+                { 2, 3 },
+                { 3, 4 }
+            };
+            PrintRowSums(a);
         }
 
         /// <summary>
@@ -50,14 +56,11 @@ namespace lab4p2
         public static int[] RowSum(int[,] arr)
         {
             int[] sums = new int[arr.GetLength(0)];
-            Console.WriteLine(arr.GetLength(0));
             for(int row = 0; row < arr.GetLength(0); row++)
             {
-                Console.WriteLine("Start " + row);
                 int sum = 0;
                 for(int col = 0; col < arr.GetLength(1); col++)
                 {
-                    Console.WriteLine(col + " " + arr[row,col]);
                     sum += arr[row, col];
                 }
                 sums[row] = sum;
@@ -76,7 +79,6 @@ namespace lab4p2
                 int numChars = (int)Math.Floor(Math.Log10(arr.Length)) + 1;
                 int[] rowSums = RowSum(arr);
                 string template = String.Format("{{0,{0}}} : {{1}}", numChars);
-                Console.WriteLine(template);
                 for (int i = 0; i < rowSums.Length; i++)
                 {
                     Console.WriteLine(string.Format(template, i, rowSums[i]));
