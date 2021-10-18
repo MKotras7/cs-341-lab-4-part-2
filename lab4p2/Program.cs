@@ -49,12 +49,15 @@ namespace lab4p2
         /// <param name="arr">the 1d array</param>
         public static int[] RowSum(int[,] arr)
         {
-            int[] sums = new int[arr.Length];
-            for(int row = 0; row < arr.Length; row++)
+            int[] sums = new int[arr.GetLength(0)];
+            Console.WriteLine(arr.GetLength(0));
+            for(int row = 0; row < arr.GetLength(0); row++)
             {
+                Console.WriteLine("Start " + row);
                 int sum = 0;
-                for(int col = 0; col < arr.GetLength(row); col++)
+                for(int col = 0; col < arr.GetLength(1); col++)
                 {
+                    Console.WriteLine(col + " " + arr[row,col]);
                     sum += arr[row, col];
                 }
                 sums[row] = sum;
