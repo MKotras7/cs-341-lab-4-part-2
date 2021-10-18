@@ -64,5 +64,24 @@ namespace lab4p2
             }
             return sums;
         }
+
+        /// <summary>
+        /// Prints out the sums of each row of the array
+        /// </summary>
+        /// <param name="arr">a 2d integer array</param>
+        public static void PrintRowSums(int[,] arr)
+        {
+            if (arr.Length > 0)
+            {
+                int numChars = (int)Math.Floor(Math.Log10(arr.Length)) + 1;
+                int[] rowSums = RowSum(arr);
+                string template = String.Format("{{0,{0}}} : {{1}}", numChars);
+                Console.WriteLine(template);
+                for (int i = 0; i < rowSums.Length; i++)
+                {
+                    Console.WriteLine(string.Format(template, i, rowSums[i]));
+                }
+            }
+        }
     }
 }
